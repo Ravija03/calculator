@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+  <head><title>calculator</title>
+    <style>
+      button{
+  font-family: arial;
+  font-size: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(209, 171, 109);
+  color: rgb(12, 40, 40);
+  cursor: pointer;
+  
+
+
+}
+button:hover{
+  background-color: rgb(156, 150, 130);
+}
+
+.name{font-family: Arial;
+      font-size: 40px;
+      background-color: rgb(189, 135, 107);
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+
+}
+.sub{
+  padding-left: 11px;
+  padding-right: 11px;
+}
+.mul{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.decimal{
+  padding-left: 11px;
+  padding-right: 11px;
+}
+.devide{
+  padding-left: 11px;
+  padding-right: 11px;
+}
+body{background-color:  #b4b9d2;;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      
+      
+    
+    
+    }
+
+.dis{
+  font-family: Arial ;
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+}
+.calculator-container {
+  background: #f2f2ec;
+  padding: 30px 30px 30px 30px;
+  border-radius: 8px;
+  
+}
+
+
+
+
+
+    </style>
+    
+  </head>
+
+  <body>
+    <div class="calculator-container">
+    <p
+    class="name">
+      Calculator 
+    </p>
+
+    <p
+    class="dis" id="display">
+
+    <P>
+
+      <button onclick="calculation += 1;
+      updateDisplay();
+      console.log(calculation);"
+      
+      >
+        1
+      </button>
+
+      <button onclick="calculation += 2;
+      updateDisplay();
+      console.log(calculation);">
+        2
+      </button>
+
+      <button onclick="calculation += 3;
+      updateDisplay();
+      console.log(calculation);">
+        3
+      </button>
+
+      <button onclick="calculation += ' + ';
+      updateDisplay();
+      console.log(calculation);">
+        +
+      </button>
+
+      
+
+    </P>
+    
+
+
+    <p>
+
+      <button onclick="calculation += 4;
+      updateDisplay();
+      console.log(calculation);"
+      
+      >
+        4
+      </button>
+
+      <button onclick="calculation += 5;
+      updateDisplay();
+      console.log(calculation);">
+        5
+      </button>
+
+      <button onclick="calculation += 6;
+      updateDisplay();
+      console.log(calculation);">
+        6
+      </button>
+
+      
+      <button class="sub" onclick="calculation += ' - ';
+      updateDisplay();
+      console.log(calculation);">
+        -
+      </button>
+      
+
+    </p>
+
+    <p>
+
+      <button onclick="calculation += 7;
+      updateDisplay();
+      console.log(calculation);"
+      
+      >
+        7
+      </button>
+
+      <button onclick="calculation += 8;
+      updateDisplay();
+      console.log(calculation);">
+        8
+      </button>
+
+      <button onclick="calculation += 9;
+      updateDisplay();
+      console.log(calculation);">
+        9
+      </button>
+
+      
+      <button class="mul" onclick="calculation += ' * ';
+      updateDisplay();
+      console.log(calculation);">
+        *
+      </button>
+      
+
+    </p>
+
+    <p>
+
+      <button onclick="calculation += 0;
+      updateDisplay();
+      console.log(calculation);"
+      
+      >
+        0
+      </button>
+
+      
+      <button class="decimal" onclick="calculation += '.';
+      updateDisplay();
+      console.log(calculation);">
+        .
+      </button>
+      
+
+      
+      <button onclick="calculation = eval(calculation);
+      updateDisplay();
+      console.log(calculation);">
+      =
+        
+      </button>
+      
+
+      
+      <button class="devide" onclick="calculation += ' / ';
+      updateDisplay();
+      console.log(calculation);">
+        /
+      </button>
+      
+
+
+    </p>
+
+    <p>
+      <button onclick="calculation = '';
+      updateDisplay();
+      console.log(calculation);">
+        clear
+      </button>
+
+    </p>
+
+    </p>
+    </div>
+
+    
+
+    <script>
+      let calculation ='';
+      <!-- Add inside your <script> tag -->
+      function updateDisplay() {
+        document.getElementById('display').textContent = calculation;
+        }
+
+
+
+
+    </script>
+
+    
+
+    
+  </body>
+
+</html>
